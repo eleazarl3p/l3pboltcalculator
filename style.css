@@ -30,10 +30,13 @@ header {
     box-sizing: border-box;
 }
 header {
-    width: 100vw;
+    width: 80%;
     /* background-color: green; */
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 } 
 html {
     font-size: 62.5%; 
@@ -47,51 +50,53 @@ p {
 body {
     background-color: #212A3E;
     color: azure;
+
 }
 
-header {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 
 section { 
     max-width: 600px;
     height: 60px;
     margin-top: 10px;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-left: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 section .label_bloc {
-    width: 60%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
+    margin-bottom: 20px;
     /* background-color: rgb(72, 190, 151); */
 }
 
 .label_bloc .title {
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 section .section__data {
-    width: 40%;
+    width: 100%;
+    max-width: 300px;
+ 
   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+   
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
     /* height: 50px; */
   
 }
 
 .section__data input {
-    width: 80%;
+    width: 35%;
     max-width: 150px;
     height: 25px;
     outline: none;
@@ -118,11 +123,12 @@ section .section__data {
     text-align: center;
 }
 
-.separator {
-    display: none;
-}
 
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 700px) {
+    section {
+        flex-direction: row;
+    }
     section .label_bloc {
         width: 40%;
     }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>THRU-BOLT SPACING CALCULATOR</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="label_bloc">
+                <p class="title">ADJUSTED LOCATION</p>
+                <p class="subtitle">FROM CL OF BEAM</p>
+            </div>
+            <div class="section__data">
+                <input type="text" name="a" id="inputA" onkeypress="return onlyNumberKey(event)">
+                <div class="separator">||</div>
+                <input type="text" name="b" id="inputB">
+            </div>
+        </section>
+
+        <section>
+            <div class="label_bloc">
+                <p class="title">FINAL LOCATION</p>
+                <p class="subtitle">FROM CL OF BEAM</p>
+            </div>
+                <div class="section__data">
+                    <p id="element_a">AB</p>
+                    <div class="separator">||</div>
+                    <p id="element_b">AB</p>
+                </div>
+        </section>
+
+        <section >
+            <p id="result">
+                MAXIMUM SPACING EXCEEDED <br>
+                RFI MUST BE SUBMITTED
+            </p>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script>
+        function onlyNumberKey(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57) && ASCIICode != 46)
+                return false;
+            return true;
+        }
+    </script>
+</body>
+</html>

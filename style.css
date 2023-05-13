@@ -126,11 +126,21 @@ section .section__data {
 
 
 @media screen and (min-width: 700px) {
+
+    header {
+        margin-bottom: 30px;
+    } 
+
     section {
         flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+        
     }
     section .label_bloc {
         width: 40%;
+        margin-bottom: 0px;
+        
     }
     section .section__data {
         width: 60%;

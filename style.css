@@ -100,10 +100,10 @@ section .section__data {
     max-width: 150px;
     height: 25px;
     outline: none;
-    border: 2px solid white;
+    border: 2px solid #FFF;
     border-radius: 5px;
     background-color: transparent;
-    color: white;
+    color: #FFF;
     text-align: center; 
 }
 
@@ -111,12 +111,12 @@ section .section__data {
 .section__data p {
     width: 80%;
     max-width: 150px;
-    color: white;
+    color: #FFF;
     text-align: center; 
     font-size: 1.5rem;
 }
 #result{
-    color: red;
+    color: #F94A29;
     margin: 10px auto;
     font-size: 1.8rem;
     font-weight: 500;
